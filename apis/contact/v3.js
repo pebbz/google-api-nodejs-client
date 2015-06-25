@@ -63,7 +63,38 @@ function Contact(options) {
       };
 
       return createAPIRequest(parameters, callback);
-    }
+    },
+
+    /**
+     * contact.contacts.get
+     *
+     * @desc Get Contacts
+     *
+     * @alias contact.contacts.get
+     * @memberOf! contact(contact_v3)
+     *
+     * @param  {object} params - Parameters for request
+     * @param  {string} params.userEmail - Email of user
+     * @param  {string} params.contactId - Email of contact
+     * @param  {callback} callback - The callback that handles the response.
+     * @return {object} Request object
+     */
+    get: function(params, callback) {
+      var parameters = {
+        options: {
+          url: 'https://www.google.com/m8/feeds/contacts/{userEmail}/full/{contactId}',
+          method: 'GET'
+        },
+        params: params,
+        requiredParams: ['userEmail', 'contactId'],
+        pathParams: ['userEmail', 'contactId'],
+        context: self
+      };
+
+      return createAPIRequest(parameters, callback);
+    },
+
+
   }
 }
 
