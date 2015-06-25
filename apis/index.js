@@ -74,6 +74,7 @@ var APIs = {
   'cloudmonitoring': requireAPI('cloudmonitoring'),
   'compute': requireAPI('compute'),
   'computeaccounts': requireAPI('computeaccounts'),
+  'contact': requireAPI('contact'),
   'container': requireAPI('container'),
   'content': requireAPI('content'),
   'coordinate': requireAPI('coordinate'),
